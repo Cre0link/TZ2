@@ -18,10 +18,10 @@ def main():
     data= input()
     numbers=fileread(data)
 
-    print('Min:', mini(numbers))
-    print('Max:', maxi(numbers))
-    print('Summa:', summa(numbers))
-    print('Multiple:', multi(numbers))
+    print('Min:', _min(numbers))
+    print('Max:', _max(numbers))
+    print('Summa:', _sum(numbers))
+    print('Multiple:', _mult(numbers))
     print('Результат теста:')
     genplt(9)
 def _min(numbers):
@@ -58,9 +58,9 @@ def genplt(kolvo_iter):
             n*=5
         x.append(n)
         start_time=time.time()
-        multi(numbers)
+        _mult(numbers)
         end_time=time.time()
         y.append(end_time-start_time)
     plt.show()
 
-main()
+

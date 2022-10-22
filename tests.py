@@ -33,3 +33,5 @@ class TestsforProg(unittest.TestCase):
         end_time = time.time()
         long_list_time = end_time - start_time
         self.assertAlmostEqual((short_list_time*1000 / long_list_time) >= 1, True)
+if __name__ == '__main__':
+    unittest.main
